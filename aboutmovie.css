@@ -1,18 +1,29 @@
+.container-fluid{
+  height: 125px;
+  background-color:rgb(250, 172, 26);
+  border-color: rgb(250, 172, 26);
+  border-style: solid;
+  margin-left: 0px;
+  margin-bottom: 0px;
+  padding: 5px;    
+  }
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color:orange;
+  justify-content: center;
+  height: 100vh;
+}
+
 .Aether {
     width: 800x;
     height: 400px;
+    margin-left: 5px;
 }
-
-body {
-    font-family: 'Arial', sans-serif;
-    background-color: rgb(196, 140, 44);
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    height: 100vh;
-  }
-
-
+.wrap{
+  display: flex;
+  justify-content: center;
+}
 #genre {
     font-size: 15px;
 }
@@ -26,12 +37,16 @@ body {
 }
 
 img {
-    margin: 50px;
+    margin-top: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 0px;
 }
 
 #body {
     font-size: 20px;
-    margin-top: 200px;
+    margin-top: 109px;
+    
 }
 
 #info {
@@ -49,7 +64,7 @@ font-size: default;
     margin-bottom: 15px;
     font-family: 'Times New Roman', Times, serif;
     font-size: large;
-    margin-left: 40px;
+    margin-left: 10px;
   }
 
   summary {
