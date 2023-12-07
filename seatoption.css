@@ -1,0 +1,33 @@
+#seatSection {
+    display: flex;
+    justify-content: center;
+}
+
+#seatList {
+    width: 60%;
+}
+
+.lists {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.lists div{
+    display: flex;
+    list-style-type: none;
+}
+
+.lists div li{
+    padding: 10px;
+    margin: 10px;
+    background-color: lightgreen;
+}
+
+.lists div li:hover{
+    padding: 10px;
+    margin: 10px;
+    background-color: green;
+}
