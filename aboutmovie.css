@@ -1,0 +1,121 @@
+.Aether {
+    width: 800x;
+    height: 400px;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: rgb(196, 140, 44);
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+  }
+
+
+#genre {
+    font-size: 15px;
+}
+
+#head {
+    margin-left: 40px;
+}
+
+#paragraph {
+    margin-left: 40px;
+}
+
+img {
+    margin: 50px;
+}
+
+#body {
+    font-size: 20px;
+    margin-top: 200px;
+}
+
+#info {
+font-size: default;
+}
+
+#title {
+  margin-left: 20px;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+#Synopsis {
+    font-size: 18px;
+    margin-bottom: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+    margin-left: 40px;
+  }
+
+  summary {
+    margin-left: 40px;
+    font-size: 20px;
+  
+  }
+
+#location {
+    background-color: rgb(94, 194, 37);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 26px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s;
+    cursor: pointer;
+    margin-left: 40px;
+}
+
+#location:hover {
+    background-color: rgb(57, 160, 26);
+  }
+
+  #paragraph {
+    font-size: 20px;
+  }
+
+#ticket {
+    background-color: #34a6db;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 26px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s;
+    cursor: pointer;
+    margin-left: 40px;
+}
+#ticket:hover {
+    background-color: #1f99d1;
+  }
+
+#trailer {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 26px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    cursor: pointer;
+    margin-left: 40px;
+  }
+  
+  #trailer:hover {
+    background-color: #c0392b;
+  }
