@@ -6,6 +6,7 @@
     <title>Project UAS</title>
     <script src="script.js"></script>
     <link href="style.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
@@ -35,16 +36,24 @@
         <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
             <li><a href="index.html" class="nav-link px-2 link-secondary">Home</a></li>
             <li><a href="snack.html" class="nav-link px-2">Snacks</a></li>
-            <li><a href="#" class="nav-link px-2">Pricing</a></li>
-            <li><a href="#" class="nav-link px-2">FAQs</a></li>
-            <li><a href="#" class="nav-link px-2">About</a></li>
+            <li><a href="upcomingmovie.html" class="nav-link px-2">Upcoming Movie</a></li>
         </ul>
     
         <div class="col-md-3 text-end">
-            <button type="button" class="btn btn-outline-primary me-2" href="login.html">Login</button>
-            <button type="button" class="btn btn-primary" href="signup.html">Sign-up</button>
+            <button type="button" class="btn btn-outline-primary me-3">Login</button>
+            <button type="button" class="btn btn-primary me-3">Sign-up</button>
         </div>
         </header>
+    </div>
+
+    <h1 class="now-showing">Now Showing</h1>
+    <div class="card" style="width: 18rem;">
+        <img src="Harem.jpeg" class="card-img-top" alt="Bismillah Kunikahi Suamimu">
+        <div class="card-body">
+            <p class="card-text">Bismillah Kunikahi Suamimu</p>
+            <p class="dimension">2D R13+</p>
+            <button type="button" class="watch-now" onclick="document.location='about.html'">Watch Now</button>
+        </div>
     </div>
 </body>     
 </html>
