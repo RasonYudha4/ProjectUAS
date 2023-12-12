@@ -10,9 +10,10 @@
 
 body {
   font-family: 'Arial', sans-serif;
-  background-color:orange;
+  background-color:rgb(45, 43, 43);
   justify-content: center;
   height: 100vh;
+  color: white;
 }
 
 .Aether {
@@ -65,11 +66,13 @@ font-size: default;
     font-family: 'Times New Roman', Times, serif;
     font-size: large;
     margin-left: 10px;
+    color: white;
   }
 
   summary {
     margin-left: 40px;
     font-size: 20px;
+    color: white;
   
   }
 
