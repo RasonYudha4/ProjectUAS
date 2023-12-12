@@ -5,6 +5,7 @@
 
 #seatList {
     width: 60%;
+    margin: 20px;
 }
 
 .lists {
@@ -30,4 +31,16 @@
     padding: 10px;
     margin: 10px;
     background-color: green;
+}
+
+#submitBtn {
+    display: flex;
+    justify-content: center;
+}
+
+#submitBtn button {
+    margin: 30px;
+    padding: 10px 30px;
+    color: black;
+    border-color: green;
 }
