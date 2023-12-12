@@ -15,11 +15,16 @@
     .container-fluid{
     height: 100px;
     background-color:orange;
-    border-color: #eee;
+    border-color: orange;
     border-style: solid;
     margin-left: 0px;
     margin-bottom: 0px;
     padding: 5px;    
+    }
+
+    body{
+        background-color: rgb(45, 43, 43);
+        color: white;
     }
     </style>
 </head>
@@ -46,14 +51,24 @@
         </header>
     </div>
 
+    <div class="wrap">
     <h1 class="now-showing">Now Showing</h1>
     <div class="card" style="width: 18rem;">
         <img src="Harem.jpeg" class="card-img-top" alt="Bismillah Kunikahi Suamimu">
         <div class="card-body">
             <p class="card-text">Bismillah Kunikahi Suamimu</p>
             <p class="dimension">2D R13+</p>
-            <button type="button" class="watch-now" onclick="document.location='about.html'">Watch Now</button>
+            <a href="about.html" class="btn btn-primary">Watch Now</a>
         </div>
+        <div class="Napoleon" style="width: 18rem;">
+            <img src="Napoleon.jpg" class="card-img-top" alt="Napoleon">
+            <div class="card-body">
+                <h5 class="card-title">Napoleon</h5>
+                <p class="card-text">2D R13+</p>
+                <a href="#" class="btn btn-primary">Watch Now</a>
+            </div>
+            </div>
     </div>
+</div>
 </body>     
 </html>
