@@ -5,59 +5,115 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-    <style>
-        .Aether {
-            width: 1;
-            height: auto;
-        }
-    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    
+    <link href="aboutmovie.css" rel="stylesheet">
 </head>
 <body>
+    <div class="container-fluid">
+        <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+            <div class="col-md-3 mb-2 mb-md-0">
+                <a href="/" class="d-inline-flex link-body-emphasis text-decoration-none">
+                <svg class="bi" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"></use></svg>
+                </a>
+                <img class="logo" src="Images/Roullete.jpg" style=padding:0px; height="65">
+            </div>
 
+        <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+            <li><a href="index.html" class="nav-link px-2 link-secondary">Home</a></li>
+            <li><a href="snack.html" class="nav-link px-2">Snacks</a></li>
+            <li><a href="upcomingmovie.html" class="nav-link px-2">Upcoming Movie</a></li>
+        </ul>
+    
+        <div class="col-md-3 text-end">
+            <button type="button" class="btn btn-outline-primary me-3" onclick="document.location='login.html'">Login</button>
+            <button type="button" class="btn btn-primary me-3" onclick="document.location='signup.html'">Sign-up</button>
+        </div>
+        </header>
+    </div>
+    
+<div class="wrap">
     <div id="head">
-        <img class="Aether" src="Harem.jpeg" alt="maimejes"><p>Duration</p><br>
+        <pre id="title">Bismillah Kunikahi Suamimu</pre>
+        <pre id="genre"> Drama, horor, Roman, Adaptasi</pre>
+        <img class="Aether" src="Harem.jpeg" alt="maimejes">
+        
+        <p id="paragraph">
+            Duration : 
+110 Min
+        </p><br>
 
         <button id="ticket">Order Ticket</button><br>
         <button id="location">Plays at</button><br>
-        <button id="trailer">Trailer</button><br>
-    </div>
+        <button id="trailer">Trailer</button><br><br>
 
-    <details>
-        <summary id="summary">Read Sysnopsis</summary>
-        <pre>
-    Menceritakan tentang kehidupan suami istri antara Hanna (Mikha Tambayong) dan Malik (Rizky Nazar) yang sedang menantikan kehadiran anak pertamanya. Hanna rutin memeriksa kondisi kandungannya. Tiba-tiba dia bertemu dengan sahabat lamanya Cathy (Syifa Hadju) yang sedang praktik sebagai dokter spesialis ginekologi (kehamilan dan kesehatan rahim).Hal mengejutkan terjadi saat Hanna membawa Cathy ke rumahnya untuk saling bernostalgia. Cathy bertemu Malik mantan kekasihnya semasa SMA yang juga merupakan suami dari sahabatnya, Hanna.
-    Masih menyimpan perasaan kepada Malik, kondisi dipersulit saat Hanna didiagnosa kanker. Hal tersebut membuat Hanna harus melahirkan lebih cepat dan menjalankan operasi dengan tingkat keselamatan yang rendah. Sadar akan hal tersebut membuat Hanna mengajukan satu permintaan agar Malik dapat menikahi Cathy.
-    Keadaan yang sulit memaksa Cathy untuk menyetujui permintaan Hanna. Pertentangan hadir dari pihak keluarga Cathy yang tidak setuju atas keputusan sang anak. Dengan berbagai polemik yang ada, Cathy akhirnya menikah dengan Malik. Hingga terlibatlah mereka dalam cinta segi tiga dan poligami yang rumit.
-        </pre>
-      </details>
+        <details>
+                <summary id="summary">Read Synopsis</summary>
+                <pre id="Synopsis">
+            Menceritakan tentang kehidupan suami istri antara 
+            Hanna (Mikha Tambayong) dan Malik (Rizky Nazar) 
+            yang sedang menantikan kehadiran anak pertamanya. 
+            Hanna rutin memeriksa kondisi kandungannya. 
+            Tiba-tiba dia bertemu dengan sahabat lamanya Cathy 
+            (Syifa Hadju) yang sedang praktik sebagai dokter 
+            spesialis ginekologi (kehamilan dan kesehatan rahim). 
+            Hal mengejutkan terjadi saat Hanna membawa Cathy ke 
+            rumahnya untuk saling bernostalgia. 
+            Cathy bertemu Malik mantan kekasihnya semasa SMA yang 
+            juga merupakan suami dari sahabatnya, Hanna. 
+            Masih menyimpan perasaan kepada Malik, kondisi 
+            dipersulit saat Hanna didiagnosa kanker. Hal tersebut 
+            membuat Hanna harus melahirkan lebih cepat dan 
+            menjalankan operasi dengan tingkat keselamatan yang 
+            rendah. Sadar akan hal tersebut membuat Hanna 
+            mengajukan satu permintaan agar Malik dapat menikahi 
+            Cathy.Keadaan yang sulit memaksa Cathy untuk 
+            menyetujui permintaan Hanna. Pertentangan hadir dari 
+            pihak keluarga Cathy yang tidak setuju atas 
+            keputusan sang anak. Dengan berbagai polemik yang ada, 
+            Cathy akhirnya menikah dengan Malik. 
+            Hingga terlibatlah mereka dalam cinta segi tiga dan poligami yang rumit.
+                </pre>
+        </details>
+
+    </div> 
+
 
     <div id="body">
-        <h4>
+        <h3>
             Producers :
-        </h4><br>
-        <p>. . .</p> <br><br>
+        </h3>
+        <p>Manoj Punjabi</p><br>
 
-        <h4>
+        <h3>
             Director :
-        </h4>
-        <p>. . . </p><br><br>
+        </h3>
+        <p>Benni Setiawan</p><br>
 
-        <h4>
+        <h3>
             Writer :
-        </h4>
-        <p>. . . </p><br><br>
+        </h3>
+        <p>Benni Setiawan, Vyntiana Itari</p><br>
 
-        <h4>
+        <h3>
             Cast :
-        </h4>
-        <p>. . . </p><br><br>
+        </h3>
+        <pre id="info">
+Syifa Hadju, Rizky Nazar, Mikha Tambayong, 
+Refal Hady, Sarah Felicia, Unique Priscilla, 
+Dea Panendra, Dede Yusuf, Gilang Ramadhan, 
+Diandra Agatha, Rowiena Umboh, Ruth Marini, 
+Wina Marrino, Santana
+        </pre><br>
 
-        <h4>
+        <h3>
             Distributor :
-        </h4>
-        <p>. . . </p><br><br>
+        </h3>
+        <p>Md Pictures</p><br><br>
 
 
     </div>
+</div>
 </body>
 </html>
