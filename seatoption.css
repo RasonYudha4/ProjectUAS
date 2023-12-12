@@ -1,3 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #22092C;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #FF6C22;
+    height: 60px;
+}
+
+#navList {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+#navList li {
+    padding: 5px;
+    margin-left: 25px;
+}
+
+#navList li a {
+    text-decoration: none;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+#icon a {
+    text-decoration: none;
+    color: #22092C;
+    font-size: 52px;
+}
+
+#loginSection {
+    display: inline-block;
+    margin-right: 25px;
+}
+
+#loginSection button {
+    background-color: #22092C;
+    padding: 10px 20px 10px 20px;
+    border-radius: 25px;
+}
+
+#loginSection button:nth-child(1) {
+    background-color: #340844;
+    border: none;
+    padding: 12px 22px 12px 22px;
+}
+
+#loginSection button:nth-child(2) {
+    background-color: #EBE3D5;
+    border: #22092C solid 2px;
+}
+
+#loginSection button:nth-child(1) a {
+    text-decoration: none;
+    color: white;
+}
+
+#loginSection button:nth-child(2) a {
+    text-decoration: none;
+    color: #22092C;
+}
+
+#contentSection {
+    text-align: center;
+}
+
+#pageTitle {
+    padding-top: 15px;
+    color: white;
+    font-size: 36px;
+    display: block;
+}
+
 #seatSection {
     display: flex;
     justify-content: center;
@@ -40,7 +124,13 @@
 
 #submitBtn button {
     margin: 30px;
-    padding: 10px 30px;
-    color: black;
-    border-color: green;
+    padding: 15px 60px;
+    background-color: #FF6C22;
+    border: none;
+    border-radius: 25px;
+}
+
+#submitBtn button a {
+    text-decoration: none;
+    color: white;
 }
