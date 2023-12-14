@@ -31,6 +31,11 @@ nav {
     color: white;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
+    transition: 0.4s ease-in-out;
+}
+
+#navList li a:hover {
+    color: #340844;
 }
 
 #icon a {
@@ -45,30 +50,39 @@ nav {
 }
 
 #loginSection button {
-    background-color: #22092C;
-    padding: 10px 20px 10px 20px;
     border-radius: 25px;
 }
 
 #loginSection button:nth-child(1) {
     background-color: #340844;
     border: none;
-    padding: 12px 22px 12px 22px;
+    padding: 12px 0;
+}   
+
+#loginSection button:nth-child(1):hover {
+    background-color: #24062e;
 }
 
 #loginSection button:nth-child(2) {
     background-color: #EBE3D5;
     border: #22092C solid 2px;
+    padding: 10px 0;
 }
+
+#loginSection button:nth-child(2):hover {
+    background-color: #fff;
+} 
 
 #loginSection button:nth-child(1) a {
     text-decoration: none;
     color: white;
+    padding: 12px 22px 12px 22px;
 }
 
 #loginSection button:nth-child(2) a {
     text-decoration: none;
     color: #22092C;
+    padding: 10px 20px 10px 20px;
 }
 
 #contentSection {
@@ -96,35 +110,40 @@ nav {
     padding: 0;
     margin: 0;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
 }
 
 .lists div{
     display: flex;
     list-style-type: none;
+    margin: 10px;
 }
 
 .lists div li{
-    padding: 10px;
-    margin: 10px;
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: lightgreen;
 }
 
 .lists div li:hover{
-    padding: 10px;
-    margin: 10px;
     background-color: green;
 }
 
-#submitBtn {
+#btns {
+    margin: 30px;
     display: flex;
     justify-content: center;
 }
 
+
 #submitBtn button {
-    margin: 30px;
-    padding: 15px 60px;
+    padding: 15px 0;
+    margin: 5px;
     background-color: #FF6C22;
     border: none;
     border-radius: 25px;
@@ -133,4 +152,11 @@ nav {
 #submitBtn button a {
     text-decoration: none;
     color: white;
+    padding: 15px 60px;
+    border-radius: 25px;
+    transition: 0.4s ease-in-out;
+}
+
+#submitBtn button a:hover {
+    background-color: #d65312;
 }
