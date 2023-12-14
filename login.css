@@ -1,9 +1,92 @@
-.container-fluid{
-    height: 100px;
-    background-color:orange;
-    border-color: orange;
-    border-style: solid;
-    margin-left: 0px;
-    margin-bottom: 0px;
-    padding: 5px; 
+
+
+/* form {
+    padding-left: 700px;
+    padding-top: 250px;
+} */
+
+#email, #pass, #sign-in {
+    margin: 5px;
+}
+
+body {
+    background: url(CinemaBackground.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+.wrap {
+    display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      /* background-color: orange; */
+      padding: 20px;
+}
+
+.LoginSection{
+    width: 350px; /* Adjust the width as needed */
+    padding: 20px; /* Add padding for better visibility */
+    background-color: orange;
+    font-size: 16px;
+    padding: 25px 45px 20px 20px;
+    border-radius: 10px;
+
+}
+
+.LoginSection h1{
+    font-size: 35px;
+    text-align: center;
+}
+
+.LoginSection #email{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 40px;
+}
+
+.LoginSection #pass{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 40px;
+}
+
+.LoginSection #email::placeholder{
+    color: white;
+    font-weight: 400;
+}
+
+.LoginSection #pass::placeholder{
+    color: white;
+    font-weight: 400;
+}
+
+#sign-in {
+    width: 100%;
+    height: 45px;
+    background: white;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    font-size: 16px;
+    font-weight: 600;
+
+}
+
+.wrap .no-account{
+    font-size: 15px;
+    text-align: center;
+}
+
+.wrap .forgot-pass{
+    font-size: 15px;
+    text-align: center;
 }
