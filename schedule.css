@@ -4,6 +4,18 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: #22092C;
+    color: #fff;
+}
+
+button, input, optgroup, select, textarea {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
 nav {
     display: flex;
     align-items: center;
@@ -80,4 +92,29 @@ nav {
     text-decoration: none;
     color: #22092C;
     padding: 10px 20px 10px 20px;
+}
+
+#contentSection {
+    text-align: center;
+}
+
+#pageTitle {
+    padding-top: 15px;
+    color: white;
+    font-size: 36px;
+    display: block;
+}
+
+.movie {
+    display: flex;
+    margin-top: 67px;
+    margin-left: 100px;
+}
+
+img {
+    height: 400px;
+}
+
+#tittle_movie {
+    margin: 20px;
 }
