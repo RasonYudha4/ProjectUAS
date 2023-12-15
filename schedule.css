@@ -108,13 +108,27 @@ nav {
 .movie {
     display: flex;
     margin-top: 67px;
-    margin-left: 100px;
+    margin-left: 373px;
 }
 
 img {
     height: 400px;
 }
 
-#tittle_movie {
+.description {
     margin: 20px;
+}
+
+.btn {
+    background-color: orange;
+    border-color: orange;
+    cursor: not-allowed;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: orange;
+    border-color: orange;
+    cursor: not-allowed;
+    cursor: pointer;
 }
