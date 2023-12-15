@@ -5,51 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project UAS</title>
     <script src="script.js"></script>
-    <link href="style.css" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-
-    <style>
-    .container-fluid{
-    height: 100px;
-    background-color:orange;
-    border-color: orange;
-    border-style: solid;
-    margin-left: 0px;
-    margin-bottom: 0px;
-    padding: 5px;    
-    }
-
-    body{
-        background-color: rgb(45, 43, 43);
-        color: white;
-    }
-    </style>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link href="style.css" rel="stylesheet">
 </head>
 <body>
-<div class="container-fluid">
-    <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
-        <div class="col-md-3 mb-2 mb-md-0">
-            <a href="/" class="d-inline-flex link-body-emphasis text-decoration-none">
-            <svg class="bi" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"></use></svg>
-            </a>
-            <img class="logo" src="Images/Roullete.jpg" style=padding:0px; height="65">
+    <nav>
+        <ul id="navList">
+            <li><a href="snack.html">Snacks</a></li>
+            <li><a href="upcomingmovie.html">Movies</a></li>
+        </ul>
+        <h1 id="icon"><a id="" href="index.html">Nobar</a></h1>
+        <div id="loginSection">
+            <button><a href="login.html">Log in</a></button>
+            <button><a href="signup.html">Sign Up</a></button>
         </div>
-
-    <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-        <li><a href="index.html" class="nav-link px-2 link-secondary">Home</a></li>
-        <li><a href="snack.html" class="nav-link px-2">Snacks</a></li>
-        <li><a href="upcomingmovie.html" class="nav-link px-2">Upcoming Movie</a></li>
-    </ul>
-
-    <div class="col-md-3 text-end">
-        <button type="button" class="btn btn-outline-primary me-3" onclick="document.location='login.html'">Login</button>
-        <button type="button" class="btn btn-primary me-3" onclick="document.location='signup.html'">Sign-up</button>
-    </div>
-    </header>
-</div>
+    </nav>
 
 <div class="container">
     <h1 class="now-showing">Now Showing</h1>
