@@ -109,10 +109,12 @@ nav {
     display: flex;
     margin-top: 67px;
     margin-left: 373px;
+    margin-bottom: 20px;
 }
 
 img {
     height: 400px;
+    border: 3px solid white;
 }
 
 .description {
@@ -131,4 +133,21 @@ img {
     border-color: orange;
     cursor: not-allowed;
     cursor: pointer;
+}
+
+.schedule {
+    margin-left: 373px;
+}
+
+.times {
+    margin-bottom: 20px;
+}
+
+#tittle_movie {
+    font-weight: bold;
+    font-size: 28px;
+}
+
+.location {
+    font-size: 20px;
 }
