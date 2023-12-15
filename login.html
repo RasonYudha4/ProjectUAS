@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="login.js"></script>
     <title>Project UAS</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>    
     
     <link href="login.css" rel="stylesheet"/>
@@ -23,5 +22,21 @@
         </div>
     </nav>
     
+     
+    <div class="wrap">
+    <form>
+        <div class="LoginSection">
+            <h1>Login</h1>
+            <input type="email" placeholder="Email" name="email" id="email" required><br>
+            <input type="password" placeholder="Password" name="pass" id="pass" required><br>
+            <button type="submit" id="sign-in" onclick="document.location='index.html'">Sign In</button>
+
+        <p class="no-account">Don't have account yet? <a href="signup.html" target="_blank" id="sign-up">Sign-up</a></p>
+         <br>
+        <p class="forgot-pass"> Password? <a href="html" target="_blank" id="fpass">Change Password</a> <br></div></p>
+         <!-- <button onclick="location.href='register.html'">Sign Up</button> s -->
+         </div>
+    </form>
+    </div>
 </body>
 </html>
