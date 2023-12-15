@@ -14,15 +14,6 @@ button, input, optgroup, select, textarea {
     line-height: inherit;
 }
 
-dl, ol, ul {
-    margin-top: 0;
-    margin-bottom: 0;
-}
-
-ol, ul {
-    padding-left: 0;
-}
-
 nav {
     display: flex;
     align-items: center;
