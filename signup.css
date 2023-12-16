@@ -41,6 +41,7 @@ section {
     font-size: 32px;
     border-radius: 10px;
     margin: 2px;
+    margin-bottom: 15px;
     padding: 8px;
 }
 
@@ -53,7 +54,7 @@ section {
     color: #fff;
     font-size: 15px;
     letter-spacing: 1px;
-    margin-top: 30px;
+    margin-top: 10px;
     padding-left: 10px;
 }
 
@@ -103,4 +104,8 @@ section {
 
 .form .link a:hover {
     color: #fff;
+}
+
+#hid1, #hid2, #hid3 {
+    visibility: visible;
 }

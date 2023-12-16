@@ -10,21 +10,30 @@
     <link rel="stylesheet" href="login.css">
     <script>
         $(function() {
-            let IncorrectInpt = $("#incInpt");
-            let noInpt = $("#noInpt");
-            let btn = $("#link");
-            btn.click(function() {
-                let email = $("#email").val();
-                let pass = $("pass").val();
-                let loginBtn = $(this).children("a");
-                if(email == "" || pass == "") {
-                    noInpt.css("visibility", "visible");
-                }
-                if(email == "admin" && pass == "admin123") {
-                    $(this).children("a").attr("href", "index.html");
-                }
-                if(email != "admin" || pass != "admin123") {
-                    IncorrectInpt.css("visibility", "visible");
+            $('.btnn').click(function(e) {
+                e.preventDefault(); 
+                
+                let email = $('#email').val();
+                let password = $('#pass').val();
+                let incInpt = $('#incInpt');
+                let anchor = $('.btnn a');
+                let noInpt = $('#noInpt');
+                
+                if (email === '' || password === '') {
+                    noInpt.css('visibility', 'visible');
+                    incInpt.css('visibility', 'hidden');
+                    anchor.attr('href', '#'); 
+                } else {
+                    noInpt.css('visibility', 'hidden');
+
+                    if (email !== 'admin' || password !== 'admin123') {
+                        incInpt.css('visibility', 'visible');
+                        anchor.attr('href', '#'); 
+                    } else {
+                        incInpt.css('visibility', 'hidden');
+                        anchor.attr('href', 'index.html');
+                        window.location.href = 'index.html';
+                    }
                 }
             })
         })
