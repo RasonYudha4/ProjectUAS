@@ -150,4 +150,10 @@ img {
 
 .location {
     font-size: 20px;
+    margin-right: 550px;
+    width: 180px; 
+}
+
+.price {
+    display: flex;
 }
