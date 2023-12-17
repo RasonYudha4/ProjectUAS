@@ -41,6 +41,25 @@
                     window.location.href = 'index.html';
                 }
             })
+
+            $("#email").focus(function(e){
+                $(this).css("border-bottom", "3px #fa903a solid");
+            })
+            $("#email").blur(function(e){
+                $(this).css("border-bottom", "1px #ff7200 solid");
+            })
+            $("#pass").focus(function(e){
+                $(this).css("border-bottom", "3px #fa903a solid");
+            })
+            $("#pass").blur(function(e){
+                $(this).css("border-bottom", "1px #ff7200 solid");
+            })
+            $("#conpass").focus(function(e){
+                $(this).css("border-bottom", "3px #fa903a solid");
+            })
+            $("#conpass").blur(function(e){
+                $(this).css("border-bottom", "1px #ff7200 solid");
+            })
         })
     </script>
 </head>
