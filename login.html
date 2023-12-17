@@ -56,6 +56,10 @@
             $("#login").mouseout(function () { 
                 $(this).css("color", "white");
             });
+            $(".input").keypress(function() {
+                $(this).css("color", "orange");
+            });
+
             });
         })
     </script>
@@ -65,8 +69,8 @@
     <section>
         <div class="form">
             <h2 id="login">Login Here</h2>
-            <input id="email" type="email" name="email" placeholder="Email" required>
-            <input id="pass" type="password" name="" placeholder="Password" required>
+            <input id="email" type="email" name="email" placeholder="Email" required class="input">
+            <input id="pass" type="password" name="" placeholder="Password" required class="input">
             <div class="additionalText">
                 <p class="pile" id="incInpt">Email or password incorrect</p>
                 <p class="pile" id="noInpt">Please input email and password</p>
