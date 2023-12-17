@@ -1,6 +1,23 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+.col-6 {
+    width: 288px;
+    height: 565px;
+    margin: auto;
+}
+
+.card-body {
+    
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+
 }
 
 body {
