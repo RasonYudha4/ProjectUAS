@@ -49,6 +49,18 @@
             $("#pass").blur(function(e){
                 $(this).css("border-bottom", "1px #ff7200 solid");
             })
+            $(function(){
+            $("#login").mousemove(function () { 
+                $(this).css("color", "orange");
+            });
+            $("#login").mouseout(function () { 
+                $(this).css("color", "white");
+            });
+            $(".input").keypress(function() {
+                $(this).css("color", "orange");
+            });
+
+            });
         })
     </script>
 </head>
@@ -56,9 +68,9 @@
     <h1 id="title">Nobar</h1>
     <section>
         <div class="form">
-            <h2>Login Here</h2>
-            <input id="email" type="email" name="email" placeholder="Email" required>
-            <input id="pass" type="password" name="" placeholder="Password" required>
+            <h2 id="login">Login Here</h2>
+            <input id="email" type="email" name="email" placeholder="Email" required class="input">
+            <input id="pass" type="password" name="" placeholder="Password" required class="input">
             <div class="additionalText">
                 <p class="pile" id="incInpt">Email or password incorrect</p>
                 <p class="pile" id="noInpt">Please input email and password</p>
