@@ -135,6 +135,7 @@ nav {
     justify-content: center;
     align-items: center;
     background-color: lightgreen;
+    cursor: pointer;
 }
 
 .lists div li:hover{
