@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subscribe</title>
+    <link rel="stylesheet" href="Subscribe.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(function(){
+            // Add change event for the email input field
+            $("#email").change(function() {
+                validateEmail();
+            });
+
+            $("#sub").click(function(){
+                validateEmail(); // Validate email on button click as well
+
+                let subscribe = $("#subscribe").prop("checked");      
+                let subscriptionStatus = subscribe ? "Subscribed" : "Not Subscribed";
+                $("#subscriptionMessage").text("Subscription status for " + $("#email").val() + ": " + subscriptionStatus);
+            });
+
+            function validateEmail() {
+                let email = $("#email").val();
+                let atIndex = email.indexOf("@");
+                let dotIndex = email.lastIndexOf(".");
+                if (atIndex < 1 || dotIndex < atIndex + 2 || dotIndex + 2 >= email.length) {
+                    alert("Invalid email format!");
+                    return false;
+                }
+                return true;
+            }
+        })
+    </script>
+</head>
+<body>
+    <nav>
+        <ul id="navList">
+            <li><a href="snack.html">Snacks</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+            <li><a href="Subscribe.html">Subscription</a></li>
+        </ul>
+        <h1 id="icon"><a id="" href="index.html" style="margin-right: 100px;">Nobar</a></h1>
+        <div id="loginSection">
+            <button><a href="login.html">Log in</a></button>
+            <button><a href="signup.html">Sign Up</a></button>
+        </div>
+    </nav>
+    <form id="subscriptionForm">
+        <h2>Subscription Form</h2>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <br>
+        <label>
+            <input type="checkbox" id="subscribe" name="subscribe"> Subscribe to our newsletter
+        </label>
+        <br>
+        <button type="button" id="sub">Submit</button>
+        <p id="subscriptionMessage"></p>
+    </form>
+</body>
+</html>

@@ -1,0 +1,153 @@
+body {
+    background-color: #1f0728;
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+  
+  button, input, optgroup, select, textarea {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+  }
+  
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #FF6C22;
+    height: 60px;
+  }
+  
+  dl, ol, ul {
+    margin-top: 0;
+    margin-bottom: 0;
+  } 
+  
+  ol, ul {
+    padding-left: 0;
+  }
+  
+  #navList {
+    display: flex;
+    align-items: center;
+    list-style: none;
+  }
+  
+  #navList li {
+    padding: 5px;
+    margin-left: 25px;
+  }
+  
+  #navList li a {
+    text-decoration: none;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+  }
+  
+  #navList li a:hover {
+    color: #340844;
+  }
+  
+  #icon a {
+    text-decoration: none;
+    color: #22092C;
+    font-size: 52px;
+  }
+  
+  #loginSection {
+    display: inline-block;
+    margin-right: 25px;
+  }
+  
+  #loginSection button {
+    border-radius: 25px;
+  }
+  
+  #loginSection button:nth-child(1) {
+    background-color: #340844;
+    border: none;
+    padding: 12px 0;
+  }   
+  
+  #loginSection button:nth-child(1):hover {
+    background-color: #24062e;
+  }
+  
+  #loginSection button:nth-child(2) {
+    background-color: #EBE3D5;
+    border: #22092C solid 2px;
+    padding: 10px 0;
+  }
+  
+  #loginSection button:nth-child(2):hover {
+    background-color: #fff;
+  } 
+  
+  #loginSection button:nth-child(1) a {
+    text-decoration: none;
+    color: white;
+    padding: 12px 22px 12px 22px;
+  }
+  
+  #loginSection button:nth-child(2) a {
+    text-decoration: none;
+    color: #22092C;
+    padding: 10px 20px 10px 20px;
+  }
+  
+  #contentSection {
+    text-align: center;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    justify-content: center;
+    height: 100vh;
+    color: white;
+  }
+
+  #subscriptionForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    padding: 20px;
+    background-color: #340844;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+#subscriptionForm h2 {
+    color: #fff;
+}
+
+label {
+    color: #fff;
+}
+
+input, checkbox, button {
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #EBE3D5;
+    border: #22092C solid 2px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #fff;
+}
+
+#email {
+    margin-top: 10px;
+}

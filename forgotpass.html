@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forgot Password</title>
+    <link href="forgotpass.css" rel="stylesheet"/>
+    <script>
+        $(function() {
+            $('.btnn').click(function (e) {
+                let pass = $('#new-pass').val();
+                let confirm = $('#confirm-pass').val();
+                let validpass;
+                let validpass2;
+        
+                if (pass === confirm && confirm.length == 8){
+                    alert("Your password has successfully changed");
+                    window.location.href = "login.html";
+
+                }
+
+                else {
+                    alert("Invalid password. Try again.")
+                }                     
+
+        });
+
+        $('#link').click (function () {
+            let pass = $('#new-pass').val();
+            let confirm = $('#confirm-pass').val();
+            if (pass === confirm && confirm.length == 8){
+                    window.location.href = "login.html";
+                    
+                }
+                else {
+                    alert("Invalid password. Try again.")
+                }
+        })
+
+        $("#new-pass").focus(function(e){
+                $(this).css("border-bottom", "3px #fa903a solid");
+            })
+            $("#new-pass").blur(function(e){
+                $(this).css("border-bottom", "1px #ff7200 solid");
+            })
+            $("#confirm-pass").focus(function(e){
+                $(this).css("border-bottom", "3px #fa903a solid");
+            })
+            $("#confirm-pass").blur(function(e){
+                $(this).css("border-bottom", "1px #ff7200 solid");
+            })
+            $(function(){
+            $("#Forgot pass").mousemove(function () { 
+                $(this).css("color", "orange");
+            });
+            $("#Forgot pass").mouseout(function () { 
+                $(this).css("color", "white");
+            });
+            $(".input").keypress(function() {
+                $(this).css("color", "orange");
+            });
+
+            });
+    });
+    
+    </script>
+</head>
+<body>
+    <h1 id="title">Nobar</h1>
+    <section>
+        <div class="form">
+            <h2 id="Forgot pass">Forgot Password</h2>
+            <input id="new-pass" type="text" name="pass" placeholder="New Password" required class="input">
+            <div class="additionalText">
+                <p class="pile" id="pass-label"></p>
+            </div>
+            <input id="confirm-pass" type="password" name="" placeholder="Confirm" required class="input">
+            <div class="additionalText">
+                <p class="pile" id="pass-label2"></p>
+            </div>
+            <button type="submit" class="btnn" id="link"><a >Confirm Password</a></button>
+            <p class="link">Don't have an account<br>
+            <a href="signup.html">Sign up</a> here</p>
+        </div>
+    </section>
+</body>
+</html>
