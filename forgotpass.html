@@ -7,7 +7,6 @@
     <title>Forgot Password</title>
     <link href="forgotpass.css" rel="stylesheet"/>
     <script>
-
         $(function() {
             $('.btnn').click(function (e) {
                 let pass = $('#new-pass').val();
@@ -15,9 +14,29 @@
                 let validpass;
                 let validpass2;
                 
+<<<<<<< Updated upstream
                 if (pass === confirm && confirm.length == 8){
                     window.location.href = "login.html";
+=======
+                if (pass.length == 8){
+                    $('#pass-label').text("Your Password format is Correct");
+                    validpass = true
+                    
                 }
+
+                else {
+                    $('#pass-label').text("Your Password format is Incorrect");
+                    validpass = false
+                    
+                }
+
+                if (pass === confirm && confirm.length == 8 ){
+                    $('#pass-label2').text("Password match");
+                    validpass2 = true
+                    
+>>>>>>> Stashed changes
+                }
+
                 else {
                     alert("Invalid password. Try again.")
                 }                     
@@ -25,8 +44,11 @@
         });
 
         $('#link').click (function () {
+            let pass = $('#new-pass').val();
+            let confirm = $('#confirm-pass').val();
             if (pass === confirm && confirm.length == 8){
                     window.location.href = "login.html";
+                    console.log("Work");
                 }
                 else {
                     alert("Invalid password. Try again.")
