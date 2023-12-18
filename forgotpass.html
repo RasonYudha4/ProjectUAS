@@ -1,23 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Forgot Password</title>
     <link href="forgotpass.css" rel="stylesheet"/>
+    <script>
+
+        $(function() {
+            $('.input').blur(function (e) {
+                let pass = $('#new-pass').val();
+                let confirm = $('#confirm-pass').val();
+                let validpass;
+                let validpass2;
+                
+                if (pass.length == 8){
+                    $('#pass-label').text("Your Password format is Correct");
+                    validpass = true
+                    return
+                } 
+                else {
+                    $('#pass-label').text("Your Password format is Incorrect");
+                    validpass = false
+                    return
+                }
+
+                if (pass == confirm && confirm.length == 8 ){
+                    $('#pass-label2').text("Password match");
+                    validpass2 = true
+                    return
+                }
+                else {
+                    $('#pass-label2').text("Password invalid");
+                    validpass2 = false
+                    return
+                }          
+                                
+        });
+    });
+    
+    </script>
 </head>
 <body>
     <h1 id="title">Nobar</h1>
     <section>
         <div class="form">
             <h2 id="Forgot pass">Forgot Password</h2>
-            <input id="new-pass" type="pass" name="pass" placeholder="New Password" required class="input">
+            <input id="new-pass" type="text" name="pass" placeholder="New Password" required class="input">
+            <div class="additionalText">
+                <p class="pile" id="pass-label"></p>
+            </div>
             <input id="confirm-pass" type="password" name="" placeholder="Confirm" required class="input">
             <div class="additionalText">
-                <p class="pile" id="incInpt">Email or password incorrect</p>
-                <p class="pile" id="noInpt">Please input email and password</p>
+                <p class="pile" id="pass-label2"></p>
             </div>
-            <button type="submit" class="btnn" id="link"><a href="login.html">Create Password</a></button>
+            <button type="submit" class="btnn" id="link" onclick="confirm()">Confirm Password</button>
             <p class="link">Don't have an account<br>
             <a href="signup.html">Sign up</a> here</p>
         </div>

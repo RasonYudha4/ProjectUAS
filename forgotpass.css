@@ -82,7 +82,7 @@ section {
     color: #ff7200;
 }
 
-.btnn a{
+.btnn {
     text-decoration: none;
     padding: 10px 60px;
     color: #000;
