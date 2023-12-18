@@ -14,8 +14,7 @@
             let con = $("#conf");
             let cancel = $("#cancel");
             let li = $("li");
-            let numberOfLength = seats.length;
-            let count = numberOfLength;
+            let count = 0;
             let cost = 90000 * count;
 
             li.each(function(p) {
@@ -26,10 +25,14 @@
                         prevCol = $(this).css("background-color", "green") || '';
                         $(this).css("background-color", "green");
                         pressed = true;
+                        count++;
                     } else {
-                        $(this).css("background-color", "lightgreen") = prevCol;
+                        $(this).css("background-color", "lightgreen");
+                        prevCol = $(this).css("background-color");
                         pressed = false;
+                        count--;
                     }
+                    cost = 90000 * count;
                     li.attr("class", "seats");
                 })
             })
@@ -176,9 +179,8 @@
         </div>
     </div>
     <div id="btns">
-        <div class="submitBtn" id="cancel"><button><a href="index.html">Cancel</a></button></div>
-        <div class="submitBtn" id="conf"><button><a href="#">Confirm</a></button></div>
+        <div class="submitBtn" id="cancel"><button><a href="seatoption.html">Cancel</a></button></div>
+        <div class="submitBtn" id="conf"><button><a>Confirm</a></button></div>
     </div>
-
 </body>
 </html>
