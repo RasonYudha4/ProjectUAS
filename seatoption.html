@@ -11,14 +11,12 @@
     <script>
         $(function(){
             let seats = $(".seats"); 
-            let confirm = $("#conf");
+            let con = $("#conf");
             let cancel = $("#cancel");
             let li = $("li");
             let numberOfLength = seats.length;
             let count = numberOfLength;
             let cost = 90000 * count;
-
-            
 
             li.each(function(p) {
                 let pressed = false;
@@ -35,7 +33,8 @@
                     li.attr("class", "seats");
                 })
             })
-            confirm.click(function() {
+
+            con.click(function() {
                 $("#wrapper").css("display", "flex");
                 $("#seatSection").css("display", "none");
                 let ticketDisplay = $("#ticketDisplay");
