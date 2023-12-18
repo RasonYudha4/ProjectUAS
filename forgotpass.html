@@ -18,26 +18,60 @@
                 if (pass.length == 8){
                     $('#pass-label').text("Your Password format is Correct");
                     validpass = true
-                    return
+                    
                 } 
                 else {
                     $('#pass-label').text("Your Password format is Incorrect");
                     validpass = false
-                    return
+                    
                 }
 
-                if (pass == confirm && confirm.length == 8 ){
+                if (pass === confirm && confirm.length == 8 ){
                     $('#pass-label2').text("Password match");
                     validpass2 = true
-                    return
+                    
                 }
                 else {
                     $('#pass-label2').text("Password invalid");
                     validpass2 = false
-                    return
-                }          
-                                
+                    
+                }                         
+
         });
+
+        $('#link').click (function () {
+            if (pass === confirm && confirm.length == 8){
+                    window.location.href = "login.html";
+                }
+                else {
+                    alert("Invalid password. Try again.")
+                }
+        })
+
+        $("#new-pass").focus(function(e){
+                $(this).css("border-bottom", "3px #fa903a solid");
+            })
+            $("#new-pass").blur(function(e){
+                $(this).css("border-bottom", "1px #ff7200 solid");
+            })
+            $("#confirm-pass").focus(function(e){
+                $(this).css("border-bottom", "3px #fa903a solid");
+            })
+            $("#confirm-pass").blur(function(e){
+                $(this).css("border-bottom", "1px #ff7200 solid");
+            })
+            $(function(){
+            $("#Forgot pass").mousemove(function () { 
+                $(this).css("color", "orange");
+            });
+            $("#Forgot pass").mouseout(function () { 
+                $(this).css("color", "white");
+            });
+            $(".input").keypress(function() {
+                $(this).css("color", "orange");
+            });
+
+            });
     });
     
     </script>
@@ -55,7 +89,7 @@
             <div class="additionalText">
                 <p class="pile" id="pass-label2"></p>
             </div>
-            <button type="submit" class="btnn" id="link" onclick="confirm()">Confirm Password</button>
+            <button type="submit" class="btnn" id="link"><a >Confirm Password</a></button>
             <p class="link">Don't have an account<br>
             <a href="signup.html">Sign up</a> here</p>
         </div>

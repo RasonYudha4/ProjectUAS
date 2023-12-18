@@ -75,6 +75,7 @@ section {
     cursor: pointer;
     color: #fff;
     transition: 0.4s ease-in-out;
+    padding: 10px 60px;
 }
 
 .btnn:hover {
@@ -82,9 +83,8 @@ section {
     color: #ff7200;
 }
 
-.btnn {
+.btnn a{
     text-decoration: none;
-    padding: 10px 60px;
     color: #000;
     font-weight: bold;
 }
