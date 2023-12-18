@@ -14,11 +14,11 @@
             $('.btnn').click(function(e) {
                 e.preventDefault(); 
 
-                var email = $('#email').val();
-                var password = $('#pass').val();
-                var confirmPassword = $('#conpass').val();
+                let email = $('#email').val();
+                let password = $('#pass').val();
+                let confirmPassword = $('#conpass').val();
 
-                var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                let emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
                 if (!emailPattern.test(email)) {
                     $('#hid1').css('visibility', 'visible');
                 } else {

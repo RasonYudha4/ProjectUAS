@@ -10,7 +10,28 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <link href="contactus.css" rel="stylesheet">
     <script>
-        
+        let emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                if (!emailPattern.test(email)) {
+                    $('#hid1').css('visibility', 'visible');
+                } else {
+                    $('#hid1').css('visibility', 'hidden');
+                }
+
+                if (password.length < 8) {
+                    $('#hid2').css('visibility', 'visible');
+                } else {
+                    $('#hid2').css('visibility', 'hidden');
+                }
+
+                if (password !== confirmPassword) {
+                    $('#hid3').css('visibility', 'visible');
+                } else {
+                    $('#hid3').css('visibility', 'hidden');
+                }
+
+                if (emailPattern.test(email) && password.length >= 8 && password === confirmPassword) {
+                    window.location.href = 'index.html';
+                }
     </script>
 </head>
 <body>
