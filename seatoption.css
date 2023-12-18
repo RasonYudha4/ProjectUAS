@@ -149,7 +149,7 @@ nav {
 }
 
 
-#submitBtn button {
+.submitBtn button {
     padding: 15px 0;
     margin: 5px;
     background-color: #FF6C22;
@@ -157,7 +157,7 @@ nav {
     border-radius: 25px;
 }
 
-#submitBtn button a {
+.submitBtn button a {
     text-decoration: none;
     color: white;
     padding: 15px 60px;
@@ -165,6 +165,35 @@ nav {
     transition: 0.4s ease-in-out;
 }
 
-#submitBtn button a:hover {
+.submitBtn button a:hover {
     background-color: #d65312;
+}
+
+#wrapper {
+    display: none;
+    justify-content: center;
+}
+
+#confirmSection {
+    width: 60%;
+    color: #fff;
+    margin: 20px;
+}
+
+#confirmSection h2 {
+    text-align: center;
+}
+
+#confirmContents {
+    margin: 20px;
+}
+
+/* #confirmContents img {
+    height: 200px;
+} */
+
+#textContents {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }

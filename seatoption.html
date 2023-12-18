@@ -10,12 +10,39 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script>
         $(function(){
-            $("li").click(function () {
-                $(this).css("background-color", "green");
-            });
-            $("li").dblclick(function () {
-                $(this).css("background-color", "");
-            });
+            let seats = $(".seats"); 
+            let confirm = $("#conf");
+            let cancel = $("#cancel");
+            let li = $("li");
+            let numberOfLength = seats.length;
+            let count = numberOfLength;
+            let cost = 90000 * count;
+
+            
+
+            li.each(function(p) {
+                let pressed = false;
+                let prevCol = '';
+                $(this).click(function() {
+                    if(!pressed){
+                        prevCol = $(this).css("background-color", "green") || '';
+                        $(this).css("background-color", "green");
+                        pressed = true;
+                    } else {
+                        $(this).css("background-color", "lightgreen") = prevCol;
+                        pressed = false;
+                    }
+                    li.attr("class", "seats");
+                })
+            })
+            confirm.click(function() {
+                $("#wrapper").css("display", "flex");
+                $("#seatSection").css("display", "none");
+                let ticketDisplay = $("#ticketDisplay");
+                let amountDisplay = $("#amountDisplay");
+                ticketDisplay.html(count);
+                amountDisplay.html(cost);                
+            })
         })
     </script>
 </head>
@@ -35,108 +62,122 @@
         <h1 id="pageTitle">Select Seat</h1>
     </div>
     <div id="seatSection">
-    <div id="seatList">
-        <ul class="lists">
-            <div>
-                <li>A1</li>
-                <li>A2</li> 
-            </div>
-            <div>
-                <li>A3</li>
-                <li>A4</li>
-                <li>A5</li>
-                <li>A6</li>
-            </div>
-            <div>
-                <li>A7</li>
-                <li>A8</li>
-            </div>
-        </ul>
-        <ul class="lists">
-            <div>
-                <li>B1</li>
-                <li>B2</li> 
-            </div>
-            <div>
-                <li>B3</li>
-                <li>B4</li>
-                <li>B5</li>
-                <li>B6</li>
-            </div>
-            <div>
-                <li>B7</li>
-                <li>B8</li>
-            </div>
-        </ul>
-        <ul class="lists">
-            <div>
-                <li>C1</li>
-                <li>C2</li> 
-            </div>
-            <div>
-                <li>C3</li>
-                <li>C4</li>
-                <li>C5</li>
-                <li>C6</li>
-            </div>
-            <div>
-                <li>C7</li>
-                <li>C8</li>
-            </div>
-        </ul>
-        <ul class="lists">
-            <div>
-                <li>D1</li>
-                <li>D2</li> 
-            </div>
-            <div>
-                <li>D3</li>
-                <li>D4</li>
-                <li>D5</li>
-                <li>D6</li>
-            </div>
-            <div>
-                <li>D7</li>
-                <li>D8</li>
-            </div>
-        </ul>
-        <ul class="lists">
-            <div>
-                <li>E1</li>
-                <li>E2</li> 
-            </div>
-            <div>
-                <li>E3</li>
-                <li>E4</li>
-                <li>E5</li>
-                <li>E6</li>
-            </div>
-            <div>
-                <li>E7</li>
-                <li>E8</li>
-            </div>
-        </ul>
-        <ul class="lists">
-            <div>
-                <li>F1</li>
-                <li>F2</li> 
-            </div>
-            <div>
-                <li>F3</li>
-                <li>F4</li>
-                <li>F5</li>
-                <li>F6</li>
-            </div>
-            <div>
-                <li>F7</li>
-                <li>F8</li>
-            </div>
-        </ul>
+        <div id="seatList">
+            <ul class="lists">
+                <div>
+                    <li>A1</li>
+                    <li>A2</li> 
+                </div>
+                <div>
+                    <li>A3</li>
+                    <li>A4</li>
+                    <li>A5</li>
+                    <li>A6</li>
+                </div>
+                <div>
+                    <li>A7</li>
+                    <li>A8</li>
+                </div>
+            </ul>
+            <ul class="lists">
+                <div>
+                    <li>B1</li>
+                    <li>B2</li> 
+                </div>
+                <div>
+                    <li>B3</li>
+                    <li>B4</li>
+                    <li>B5</li>
+                    <li>B6</li>
+                </div>
+                <div>
+                    <li>B7</li>
+                    <li>B8</li>
+                </div>
+            </ul>
+            <ul class="lists">
+                <div>
+                    <li>C1</li>
+                    <li>C2</li> 
+                </div>
+                <div>
+                    <li>C3</li>
+                    <li>C4</li>
+                    <li>C5</li>
+                    <li>C6</li>
+                </div>
+                <div>
+                    <li>C7</li>
+                    <li>C8</li>
+                </div>
+            </ul>
+            <ul class="lists">
+                <div>
+                    <li>D1</li>
+                    <li>D2</li> 
+                </div>
+                <div>
+                    <li>D3</li>
+                    <li>D4</li>
+                    <li>D5</li>
+                    <li>D6</li>
+                </div>
+                <div>
+                    <li>D7</li>
+                    <li>D8</li>
+                </div>
+            </ul>
+            <ul class="lists">
+                <div>
+                    <li>E1</li>
+                    <li>E2</li> 
+                </div>
+                <div>
+                    <li>E3</li>
+                    <li>E4</li>
+                    <li>E5</li>
+                    <li>E6</li>
+                </div>
+                <div>
+                    <li>E7</li>
+                    <li>E8</li>
+                </div>
+            </ul>
+            <ul class="lists">
+                <div>
+                    <li>F1</li>
+                    <li>F2</li> 
+                </div>
+                <div>
+                    <li>F3</li>
+                    <li>F4</li>
+                    <li>F5</li>
+                    <li>F6</li>
+                </div>
+                <div>
+                    <li>F7</li>
+                    <li>F8</li>
+                </div>
+            </ul>
+        </div>
     </div>
+    <div id="wrapper">
+        <div id="confirmSection">
+            <h2>You are purchasing</h2>
+            <div id="confirmContents" class="content-wrapper">
+                <!-- <img src="Harem.jpeg" alt=""> -->
+                <div id="textContents">
+                    <!-- <p id="movieTitle">Bismillah Kunikahi Suamimu</p>
+                    <p id="location">Summarecon Bekasi</p> -->
+                    <p id="ticketDisplay"></p>
+                    <p id="amountDisplay"></p>
+                </div>
+            </div>
+        </div>
     </div>
     <div id="btns">
-        <div id="submitBtn"><button><a href="index.html">Cancel</a></button></div>
-        <div id="submitBtn"><button><a href="">Confirm</a></button></div>
+        <div class="submitBtn" id="cancel"><button><a href="index.html">Cancel</a></button></div>
+        <div class="submitBtn" id="conf"><button><a href="#">Confirm</a></button></div>
     </div>
 
 </body>
